@@ -1,0 +1,107 @@
+body {
+  background-color: #f9e3f4;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 50px;
+}
+
+h1 {
+  color: #ff85a2;
+  font-size: 3em;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff85a2;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6c91;
+}
+
+.slideshow-container {
+  display: none;
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.slide-text {
+  color: #ff5e7a;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: fade 1.5s ease-in-out;
+}
+
+.fade {
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.message-container {
+  display: none;
+  font-size: 1.3em;
+  color: #ff5e7a;
+  margin-top: 30px;
+}
+
+.message {
+  animation: fade 2s ease-in-out;
+}
+.final-message h2 {
+  color: #ff5e7a;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 50px;
+  animation: fade 2s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  .message {
+    font-size: 1.1em;
+  }
+
+  .final-message h2 {
+    font-size: 2em;
+  }
+
+  .slideshow-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .slide img {
+    width: 100%;
+  }
+}
